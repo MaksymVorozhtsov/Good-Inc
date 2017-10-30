@@ -12,12 +12,12 @@ body {
 
 @font-face {
     font-family: 'NexaHeavy';
-    src: url('fonts/NexaBold.otf');
+    src: url('../fonts/NexaBold.otf');
 }
 
 @font-face {
     font-family: 'NexaLight';
-    src: url('fonts/NexaLight.otf');
+    src: url('../fonts/NexaLight.otf');
 }
 
 
@@ -37,24 +37,6 @@ ol, ul {
 
 a, a:hover {
     text-decoration: none;
-}
-
-.clearfix:before,
-.clearfix:after {
-    content: " ";
-    display: table;
-}
-
-.clearfix:after {
-    clear: both;
-}
-
-.left {
-    float: left;
-}
-
-.right {
-    float: right;
 }
 
 .text-right {
@@ -114,8 +96,11 @@ a, a:hover {
     background: #474747;
 }
 
+.navigation {
+    display: flex;
+}
+
 .navigation li {
-    float: left;
     padding: 25px 0;
 }
 
@@ -140,12 +125,15 @@ a, a:hover {
     left: 0;
     right: 0;
     display: block;
-    bottom: -24px;
+    bottom: -23px;
     height: 4px;
     background: #f26c4f;
 }
 
 #panel {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
     padding: 15px 0 10px;
 }
 
@@ -158,7 +146,7 @@ a, a:hover {
     height: 45px;
     padding: 15px 20px;
     border: none;
-    background: #fff url('img/clock.png') no-repeat right 13px center;
+    background: #fff url('../img/clock.png') no-repeat right 13px center;
     -webkit-box-shadow: 1px 1px 1px rgba(0,0,0,0.1);
     -mox-box-shadow: 1px 1px 1px rgba(0,0,0,0.1);
     -o-box-shadow: 1px 1px 1px rgba(0,0,0,0.1);
@@ -171,6 +159,7 @@ a, a:hover {
 }
 
 .social {
+    display: flex;
     padding-top: 11px;
 }
 
@@ -182,7 +171,7 @@ a, a:hover {
     font-size: 12px;
     height: 13px;
     line-height: 13px;
-    background: url(img/sn-icons.png) no-repeat;
+    background: url(../img/sn-icons.png) no-repeat;
 }
 
 .social a:first-child {
@@ -208,6 +197,10 @@ a, a:hover {
 
 .social a.em {
     background-position: 0 -39px;
+}
+
+#feature {
+    display: flex;
 }
 
 .feature-img {
@@ -269,11 +262,12 @@ a, a:hover {
     color: #a7a7a7;
     font-size: 12px;
     line-height: 24px;
-    background: url(img/feature-date.png) no-repeat left center;
+    background: url(../img/feature-date.png) no-repeat left center;
     width: 50%;
 }
 
 #articles {
+    display: flex; 
     margin-top: 15px;
     margin-bottom: 15px;
 }
@@ -281,7 +275,6 @@ a, a:hover {
 .article {
     width: 300px;
     height: 380px;
-    float: left;
     background: #fff;
     margin-right: 20px;
     border-bottom: 1px solid #d3d3d3;
@@ -336,19 +329,41 @@ a, a:hover {
     text-align: right;
     padding-right: 8px;
     padding-top: 8px;
-    background: url(img/zoom.png) no-repeat;
+    background: url(../img/zoom.png) no-repeat;
 }
 
 .zoom a {
-    display: inline-block;
-    padding: 5px 8px;
-    color: #fff;
-    font-family: Tahoma;
-    font-size: 25px;
+    position: relative;
+}
+
+.zoom a::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    top: 18px;
+    right: 5px;
+    background-color: #fff;
+}
+
+.zoom a::after {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 20px;
+    top: 9px;
+    right: 14px;
+    background-color: #fff;
+}
+
+.zoom:hover a::before,
+.zoom:hover a::after {
+    transform: rotate(45deg);
 }
 
 #content-zone {
-    
+    display: flex;
+    justify-content: space-between;
 }
 
 .sidebar {
@@ -359,7 +374,6 @@ a, a:hover {
     position: relative;
     width: 300px;
     height: 580px;
-    float: left;
     background: #373737;
     margin-right: 20px;
     margin-bottom: 35px;
@@ -429,7 +443,7 @@ h3.mess-title a {
 }
 
 .content {
-    margin-right: 320px;
+    width: 620px;
 }
 
 .news-item {
@@ -525,12 +539,12 @@ h5.title-news a:hover {
 
 .rate span {
     height: 14px;
-    background: url(img/star.png) repeat-x;
+    background: url(../img/star.png) repeat-x;
 }
 
 .news-item.selected .rate span {
     height: 14px;
-    background: url(img/star-white.png) repeat-x;
+    background: url(../img/star-white.png) repeat-x;
 }
 
 .news-item.small {
@@ -558,6 +572,10 @@ h5.title-news a:hover {
 
 .post-wrap {
     margin-bottom: 30px;
+}
+
+.post-image {
+    height: 305px;
 }
 
 .post-item {
@@ -624,8 +642,8 @@ h5.title-news a:hover {
     margin-bottom: 30px;
 }
 
-.footer-menu li {
-    float: left;
+.footer-menu {
+    display: flex;
 }
 
 .footer-menu li span {

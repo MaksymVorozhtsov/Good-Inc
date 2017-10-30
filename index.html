@@ -1,24 +1,264 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="en">
     <head>
         <meta http-equiv="content-type" content="text/html"; charset="utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <title>Good Inc</title>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="css/normalize-7.0.0.css">
+        <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-        <div class="wrapper">
-            <div id="header">
-                <div class="container clearfix">
-                     <div class="logo left">
-                         <a href="/">g</a><span>Good Inc.</span>
-                     </div>
+        <div id="header">
+            <div class="container">
+                 <div class="logo">
+                     <a href="/">g</a><span>Good Inc.</span>
+                 </div>
+            </div>
+        </div>
+        <div id="nav">
+            <div class="container">
+                <ul class="navigation">
+                    <li><span><a href="#">Portfolio</a></span></li>
+                    <li class="active"><span><a href="#">Services</a></span></li>
+                    <li><span><a href="#">Staff</a></span></li>
+                    <li><span><a href="#">Articles</a></span></li>
+                    <li><span><a href="#">Contact</a></span></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div id="panel">
+                <div class="search-wrapper">
+                    <form action="#">
+                        <input type="text" class="search" placeholder="Search for something here">
+                    </form>
+                </div>
+                <div class="social">
+                    <a href="#" class="tw">Twitter</a>
+                    <a href="#" class="fb">Facebook</a>
+                    <a href="#" class="rs">RSS</a>
+                    <a href="#" class="em">Mail</a>
                 </div>
             </div>
-            <div id="nav">
-                <div class="container clearfix">
-                    <ul class="navigation left">
+            <div id="feature">
+                <div class="feature-img">
+                    <img src="img/feature.jpg" alt="">
+                    <div class="feature-descr">
+                        <p>Good Inc. image caption to go here</p>
+                    </div>
+                </div>
+                <div class="feature-text">
+                    <h4>Housework can't kill you, but why take a chance?</h4>
+                    <p>Quisque accumsan eleifend dolor, nec bibendum nibh ultricies at. Nunc convallis risus sit amet augue bibendum non lobortis eros interdum. Maecenas quis risus felis, at volutpat elit...</p>
+                    <div class="feature-date">14th April 2013</div>
+                </div>
+            </div>
+            <div id="articles">
+                <div class="article">
+                    <div class="article-img">
+                        <div class="zoom">
+                            <a href="#"></a>
+                        </div>
+                        <a href="#">
+                            <img src="img/article_01.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="articles-text">
+                        <h3 class="title"><a href="#">Taste & Sounds from Thailand</a></h3>
+                        <p>We've made some small changes to BlazRobar.com...</p>
+                    </div>
+                </div>
+                <div class="article">
+                    <div class="article-img">
+                        <div class="zoom">
+                            <a href="#"></a>
+                        </div>
+                        <a href="#">
+                            <img src="img/article_02.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="articles-text">
+                        <h3 class="title"><a href="#">BlazRobar.com is awesome for PSD</a></h3>
+                        <p>We've made some small changes to BlazRobar.com...</p>
+                    </div>
+                </div>
+                <div class="article">
+                    <div class="article-img">
+                        <div class="zoom">
+                            <a href="#"></a>
+                        </div>
+                        <a href="#">
+                            <img src="img/article_03.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="articles-text">
+                        <h3 class="title"><a href="#">Nice Looking  Mountains Ah?</a></h3>
+                        <p>We've made some small changes to BlazRobar.com...</p>
+                    </div>
+                </div>
+            </div>
+            <div id="content-zone">
+                <div class="content">
+                    <div class="news-item">
+                        <h4 class="title-news"><a href="#">Good Inc. Good Choice.</a></h4>
+                        <div class="news-panel">
+                            <span class="news-date">14th January 2013</span>
+                            <span class="divider"></span>
+                            <span class="news-comments">32 Comments</span>
+                            <span class="divider"></span>
+                            <span class="rate"><span style="width: 85%"></span></span>
+                            <span class="votes">124 Votes</span>
+                        </div>
+                        <p>I believe that if life gives you lemons, you should make lemonade... And try to find somebody whose life has given them vodka, and have a party. </p>
+                    </div>
+                    <div class="news-item selected">
+                        <h4 class="title-news"><a href="#">Behind every great man is a woman rolling</a></h4>
+                        <div class="news-panel">
+                            <span class="news-date">13h January 2013</span>
+                            <span class="divider"></span>
+                            <span class="news-comments">312 Comments</span>
+                            <span class="divider"></span>
+                            <span class="rate"><span style="width: 74%"></span></span>
+                            <span class="votes">1254 Votes</span>
+                        </div>
+                        <p>I believe that if life gives you lemons, you should make lemonade... And try to find somebody whose life has given them vodka, and have a party. </p>
+                    </div>
+                    <div class="news-item small">
+                        <h4 class="title-news"><a href="#">A day without sunshine is like, you know, night.</a></h4>
+                        <div class="news-panel">
+                            <span class="news-date">14th January 2013</span>
+                            <span class="divider"></span>
+                            <span class="news-comments">32 Comments</span>
+                        </div>
+                    </div>
+                    <div class="news-item small">
+                        <h5 class="title-news"><a href="#">As a child my family's menu consisted of two choices: take it</a></h4>
+                        <div class="news-panel">
+                            <span class="news-date">14th January 2013</span>
+                            <span class="divider"></span>
+                            <span class="news-comments">32 Comments</span>
+                        </div>
+                    </div>
+                    <div class="news-item small">
+                        <h5 class="title-news"><a href="#">Get your facts first, then you can distort them as you please.</a></h4>
+                        <div class="news-panel">
+                            <span class="news-date">14th January 2013</span>
+                            <span class="divider"></span>
+                            <span class="news-comments">32 Comments</span>
+                        </div>
+                    </div>
+                    <div class="news-item small">
+                        <h5 class="title-news"><a href="#">As a child my family's menu consisted of two choices: take it</a></h4>
+                        <div class="news-panel">
+                            <span class="news-date">14th January 2013</span>
+                            <span class="divider"></span>
+                            <span class="news-comments">32 Comments</span>
+                        </div>
+                    </div>
+                    <div class="news-item small">
+                        <h5 class="title-news"><a href="#">Get your facts first, then you can distort them as you please.</a></h4>
+                        <div class="news-panel">
+                            <span class="news-date">14th January 2013</span>
+                            <span class="divider"></span>
+                            <span class="news-comments">32 Comments</span>
+                        </div>
+                    </div>
+                    <div class="news-readmore">
+                        <a href="#">read more</a>
+                        <p><a href="#"><img src="img/plus.png" /></a></p>
+                    </div>
+                    <div id="posts">
+                        <div class="post-wrap">
+                            <div class="post-item">
+                                <h2 class="title">Nice text boxage here</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu turpis purus. Pellentesque ullamcorper mauris vitae sapien bibendum tincidunt.</p>
+                                <p>Morbi malesuada mauris sed nibh placerat sit amet posuere libero egestas. Vestibulum consectetur iaculis est, at dapibus purus malesuada vitae. Mauris sollicitudin aliquam scelerisque. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec et mi sem. Duis tristique elementum tristique. Sed ac magna quis erat sagittis suscipit. Phasellus faucibus rhoncus massa, non laoreet lorem fringilla non.</p>
+                            </div>
+                            <div class="post-info">
+                                <span class="post-date">19th April</span>
+                                <span class="post-likes">23</span>
+                                <span class="post-liked"><img src="img/like.png"></span>
+                            </div>
+                        </div>
+                        <div class="post-wrap">
+                            <div class="post-image">
+                                <a href="#">
+                                    <img src="img/post-img.jpg" width="620" height="305" alt="I like long walks, especially when they are taken by people who really annoy me.">
+                                </a>
+                            </div>
+                            <div class="post-item">
+                                <h2 class="title">I like long walks, especially when they are taken by people who really annoy me.</h2>
+                                <p style="font-weight: normal; line-height: 22px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu turpis purus. Pellentesque ullamcorper mauris vitae sapien bibendum tincidunt. 
+                                Morbi malesuada mauris sed nibh placerat sit amet posuere libero egestas. Vestibulum consectetur iaculis est, at dapibus purus malesuada vitae. Mauris smassa, non laoreet lorem fringilla non.</p>
+                            </div>
+                        </div>
+                        <div class="post-wrap">
+                            <div class="post-item">
+                                <h2 class="title">A slightly different text box</h2>
+
+                                <p style="font-weight: normal; line-height: 22px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu turpis purus. Pellentesque ullamcorper mauris vitae sapien bibendum tincidunt. Check leo dignissim + </p>
+
+                                <p style="font-weight: normal; line-height: 22px;">Morbi malesuada mauris sed nibh placerat sit amet posuere libero egestas. Vestibulum consectetur iaculis est, at dapibus purus malesuada vitae. Mauris sollicitudin aliquam scelerisque. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec et mi sem. Duis tristique elementum tristique. Sed ac magna quis erat sagittis suscipit. Phasellus faucibus rhoncus massa, non laoreet lorem fringilla non.</p>
+
+                                <p style="font-weight: normal; line-height: 22px;">Mauris sollicitudin aliquam scelerisque. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec et mi sem. Duis tristique elementum tristique. Sed ac magna quis erat sagittis suscipit. Phasellus faucibus rhoncus</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sidebar">
+                    <div class="sidebar-feature">
+                        <div class="article-img">
+                            <div class="zoom">
+                                <a href="#"></a>
+                            </div>
+                            <a href="#"><img src="img/sidebar-feature.jpg" alt=""></a>
+                        </div>
+                        <div class="articles-text">
+                            <h3 class="title"><a href="#">Nice Looking  Mountains Ah?</a></h3>
+                            <p>Quisque accumsan eleifend dolor, nec bibendum nibh ultricies at. Nunc convallis risus sit amet augue bibendum non lobortis eros interdum. Maecenas quis risus felis, at volutpat elit. Proin vel nisl in orci venenatis suscipit eget sed lectus. </p>
+                        </div>
+                    </div>
+                    <div class="sidebar-messages">
+                        <div class="message-item">
+                            <h3 class="mess-title"><a href="#">Housework can't kill you, but why take a chance?</a></h3>
+                            <p>Quisque accumsan eleifend dolor, nec bibendum nibh ultricies at. Nunc convallis risus sit amet augue bibendum non lobortis eros interdum...</p>
+                            <span class="mess-date">13th January 2013 </span>
+                        </div>
+                        <div class="mess-divider">
+                            <div class="mess-divider-grey"></div>
+                            <div class="mess-divider-white"></div>
+                        </div>
+                        <div class="message-item">
+                            <h3 class="mess-title"><a href="#">My fake plants died because I did not pretend to water them.</a></h3>
+                            <p>Quisque accumsan eleifend dolor, nec bibendum nibh ultricies at. Nunc convallis risus sit amet augue bibendum non lobortis eros interdum...</p>
+                            <span class="mess-date">10th January 2013 </span>
+                        </div>
+                    </div>
+                    <div class="sidebar-themes">
+                        <div class="theme-item">
+                            <a href="#" class="theme-title">About Us</a>
+                            <span>(Blaz Robar)</span>
+                        </div>
+                        <div class="theme-item">
+                            <a href="#" class="theme-title">How to</a>
+                            <span>(Jamie Oliver)</span>
+                        </div>
+                        <div class="theme-item">
+                            <a href="#" class="theme-title">Write for us</a>
+                            <span>(Bill Muarry)</span>
+                        </div>
+                        <div class="theme-item">
+                           <a href="#" class="theme-title-notbold">Video Testimonails</a>
+                           <span>(John Smith)</span>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>  
+        <div id="footer">
+            <div class="container">
+                <div class="footer-nav">
+                    <ul class="footer-menu">
                         <li><span><a href="#">Portfolio</a></span></li>
                         <li class="active"><span><a href="#">Services</a></span></li>
                         <li><span><a href="#">Staff</a></span></li>
@@ -26,256 +266,10 @@
                         <li><span><a href="#">Contact</a></span></li>
                     </ul>
                 </div>
-            </div>
-            <div class="container clearfix">
-                <div id="panel" class="clearfix">
-                    <div class="search-wrapper left">
-                        <form action="#">
-                            <input type="text" class="search" placeholder="Search for something here">
-                        </form>
-                    </div>
-                    <div class="social right">
-                        <a href="#" class="tw">Twitter</a>
-                        <a href="#" class="fb">Facebook</a>
-                        <a href="#" class="rs">RSS</a>
-                        <a href="#" class="em">Mail</a>
-                    </div>
+                <div class="footer-copy">
+                    <p>As cross as a hoon my built like a op shop. We're going bored sh*tless heaps she'll be right budgie smugglers. Grab us a durry mate she'll be right dunny rat.</p>
+                    <p>She'll be right larrikin with skite. As stands out like kero it'll be truckie.</p>
                 </div>
-                <div id="feature" class="clearfix">
-                    <div class="feature-img left">
-                        <img src="img/feature.jpg" alt="">
-                        <div class="feature-descr">
-                            <p>Good Inc. image caption to go here</p>
-                        </div>
-                    </div>
-                    <div class="feature-text left">
-                        <h4>Housework can't kill you, but why take a chance?</h4>
-                        <p>Quisque accumsan eleifend dolor, nec bibendum nibh ultricies at. Nunc convallis risus sit amet augue bibendum non lobortis eros interdum. Maecenas quis risus felis, at volutpat elit...</p>
-                        <div class="feature-date right">14th April 2013</div>
-                    </div>
-                </div>
-                
-                <div id="articles" class="clearfix">
-                    <div class="article">
-                        <div class="article-img">
-                            <div class="zoom">
-                                <a href="#">+</a>
-                            </div>
-                            <a href="#"><img src="img/article_01.jpg" alt=""></a>
-                        </div>
-                        <div class="articles-text">
-                            <h3 class="title"><a href="#">Taste & Sounds from Thailand</a></h3>
-                            <p>We've made some small changes to BlazRobar.com...</p>
-                        </div>
-                    </div>
-                    <div class="article">
-                        <div class="article-img">
-                            <div class="zoom">
-                                <a href="#">+</a>
-                            </div>
-                            <a href="#"><img src="img/article_02.jpg" alt=""></a>
-                        </div>
-                        <div class="articles-text">
-                            <h3 class="title"><a href="#">BlazRobar.com is awesome for PSD</a></h3>
-                            <p>We've made some small changes to BlazRobar.com...</p>
-                        </div>
-                    </div>
-                    <div class="article">
-                        <div class="article-img">
-                            <div class="zoom">
-                                <a href="#">+</a>
-                            </div>
-                            <a href="#"><img src="img/article_03.jpg" alt=""></a>
-                        </div>
-                        <div class="articles-text">
-                            <h3 class="title"><a href="#">Nice Looking  Mountains Ah?</a></h3>
-                            <p>We've made some small changes to BlazRobar.com...</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div id="content-zone" class="clearfix">
-                    <div class="sidebar right">
-                        <div class="sidebar-feature">
-                            <div class="article-img">
-                                <div class="zoom">
-                                    <a href="#">+</a>
-                                </div>
-                                <a href="#"><img src="img/sidebar-feature.jpg" alt=""></a>
-                            </div>
-                            <div class="articles-text">
-                                <h3 class="title"><a href="#">Nice Looking  Mountains Ah?</a></h3>
-                                <p>Quisque accumsan eleifend dolor, nec bibendum nibh ultricies at. Nunc convallis risus sit amet augue bibendum non lobortis eros interdum. Maecenas quis risus felis, at volutpat elit. Proin vel nisl in orci venenatis suscipit eget sed lectus. </p>
-                            </div>
-                        </div>
-                        <div class="sidebar-messages">
-                            <div class="message-item">
-                                <h3 class="mess-title"><a href="#">Housework can't kill you, but why take a chance?</a></h3>
-                                <p>Quisque accumsan eleifend dolor, nec bibendum nibh ultricies at. Nunc convallis risus sit amet augue bibendum non lobortis eros interdum...</p>
-                                <span class="mess-date">13th January 2013 </span>
-                            </div>
-                            <div class="mess-divider">
-                                <div class="mess-divider-grey"></div>
-                                <div class="mess-divider-white"></div>
-                            </div>
-                            <div class="message-item">
-                                <h3 class="mess-title"><a href="#">My fake plants died because I did not pretend to water them.</a></h3>
-                                <p>Quisque accumsan eleifend dolor, nec bibendum nibh ultricies at. Nunc convallis risus sit amet augue bibendum non lobortis eros interdum...</p>
-                                <span class="mess-date">10th January 2013 </span>
-                            </div>
-                        </div>
-                        
-                        <div class="sidebar-themes">
-                            <div class="theme-item">
-                                <span><a href="#" class="theme-title">About Us</a>   (Blaz Robar)</span>
-                            </div>
-                            
-                            <div class="theme-item">
-                                <span><a href="#" class="theme-title">How to</a>   (Jamie Oliver)</span>
-                            </div>
-                            
-                            <div class="theme-item">
-                                <span><a href="#" class="theme-title">Write for us</a>   (Bill Muarry)</span>
-                            </div>
-                            
-                            <div class="theme-item">
-                               <span><a href="#" class="theme-title-notbold">Video Testimonails</a>   (John Smith)</span>
-                            </div>
-                            
-                        </div>
-                        
-                    </div>
-                    <div class="content">
-                        <div class="news-item">
-                            <h4 class="title-news"><a href="#">Good Inc. Good Choice.</a></h4>
-                            <div class="news-panel">
-                                <span class="news-date">14th January 2013</span>
-                                <span class="divider"></span>
-                                <span class="news-comments">32 Comments</span>
-                                <span class="divider"></span>
-                                <span class="rate"><span style="width: 85%"></span></span>
-                                <span class="votes">124 Votes</span>
-                            </div>
-                            <p>I believe that if life gives you lemons, you should make lemonade... And try to find somebody whose life has given them vodka, and have a party. </p>
-                        </div>
-                        
-                        <div class="news-item selected">
-                            <h4 class="title-news"><a href="#">Behind every great man is a woman rolling</a></h4>
-                            <div class="news-panel">
-                                <span class="news-date">13h January 2013</span>
-                                <span class="divider"></span>
-                                <span class="news-comments">312 Comments</span>
-                                <span class="divider"></span>
-                                <span class="rate"><span style="width: 74%"></span></span>
-                                <span class="votes">1254 Votes</span>
-                            </div>
-                            <p>I believe that if life gives you lemons, you should make lemonade... And try to find somebody whose life has given them vodka, and have a party. </p>
-                        </div>
-                        
-                        <div class="news-item small">
-                            <h4 class="title-news"><a href="#">A day without sunshine is like, you know, night.</a></h4>
-                            <div class="news-panel">
-                                <span class="news-date">14th January 2013</span>
-                                <span class="divider"></span>
-                                <span class="news-comments">32 Comments</span>
-                            </div>
-                        </div>
-                        
-                        <div class="news-item small">
-                            <h5 class="title-news"><a href="#">As a child my family's menu consisted of two choices: take it</a></h4>
-                            <div class="news-panel">
-                                <span class="news-date">14th January 2013</span>
-                                <span class="divider"></span>
-                                <span class="news-comments">32 Comments</span>
-                            </div>
-                        </div>
-                        
-                        <div class="news-item small">
-                            <h5 class="title-news"><a href="#">Get your facts first, then you can distort them as you please.</a></h4>
-                            <div class="news-panel">
-                                <span class="news-date">14th January 2013</span>
-                                <span class="divider"></span>
-                                <span class="news-comments">32 Comments</span>
-                            </div>
-                        </div>
-                        
-                        <div class="news-item small">
-                            <h5 class="title-news"><a href="#">As a child my family's menu consisted of two choices: take it</a></h4>
-                            <div class="news-panel">
-                                <span class="news-date">14th January 2013</span>
-                                <span class="divider"></span>
-                                <span class="news-comments">32 Comments</span>
-                            </div>
-                        </div>
-                        
-                        <div class="news-item small">
-                            <h5 class="title-news"><a href="#">Get your facts first, then you can distort them as you please.</a></h4>
-                            <div class="news-panel">
-                                <span class="news-date">14th January 2013</span>
-                                <span class="divider"></span>
-                                <span class="news-comments">32 Comments</span>
-                            </div>
-                        </div>
-                        
-                        <div class="news-readmore">
-                            <a href="#">read more</a>
-                            <p><a href="#"><img src="img/plus.png" /></a></p>
-                        </div>
-                        <div id="posts">
-                            <div class="post-wrap">
-                                <div class="post-item">
-                                    <h2 class="title">Nice text boxage here</h2>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu turpis purus. Pellentesque ullamcorper mauris vitae sapien bibendum tincidunt.</p>
-                                    <p>Morbi malesuada mauris sed nibh placerat sit amet posuere libero egestas. Vestibulum consectetur iaculis est, at dapibus purus malesuada vitae. Mauris sollicitudin aliquam scelerisque. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec et mi sem. Duis tristique elementum tristique. Sed ac magna quis erat sagittis suscipit. Phasellus faucibus rhoncus massa, non laoreet lorem fringilla non.</p>
-                                </div>
-                                <div class="post-info">
-                                    <span class="post-date">19th April</span>
-                                    <span class="post-likes">23</span>
-                                    <span class="post-liked"><img src="img/like.png"></span>
-                                </div>
-                            </div>
-
-                            <div class="post-wrap">
-                                <a href="#"><img src="img/post-img.jpg" alt=""></a>
-                                <div class="post-item">
-                                    <h2 class="title">I like long walks, especially when they are taken by people who really annoy me.</h2>
-                                    <p style="font-weight: normal; line-height: 22px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu turpis purus. Pellentesque ullamcorper mauris vitae sapien bibendum tincidunt. 
-                                    Morbi malesuada mauris sed nibh placerat sit amet posuere libero egestas. Vestibulum consectetur iaculis est, at dapibus purus malesuada vitae. Mauris smassa, non laoreet lorem fringilla non.</p>
-                                </div>
-                            </div>
-                            <div class="post-wrap">
-                                <div class="post-item">
-                                    <h2 class="title">A slightly different text box</h2>
-                                    
-                                    <p style="font-weight: normal; line-height: 22px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu turpis purus. Pellentesque ullamcorper mauris vitae sapien bibendum tincidunt. Check leo dignissim + </p>
-
-                                    <p style="font-weight: normal; line-height: 22px;">Morbi malesuada mauris sed nibh placerat sit amet posuere libero egestas. Vestibulum consectetur iaculis est, at dapibus purus malesuada vitae. Mauris sollicitudin aliquam scelerisque. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec et mi sem. Duis tristique elementum tristique. Sed ac magna quis erat sagittis suscipit. Phasellus faucibus rhoncus massa, non laoreet lorem fringilla non.</p>
-
-                                    <p style="font-weight: normal; line-height: 22px;">Mauris sollicitudin aliquam scelerisque. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec et mi sem. Duis tristique elementum tristique. Sed ac magna quis erat sagittis suscipit. Phasellus faucibus rhoncus</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div id="footer">
-                <div class="container clearfix">
-                    <div class="footer-nav">
-                        <ul class="footer-menu left">
-                            <li><span><a href="#">Portfolio</a></span></li>
-                            <li class="active"><span><a href="#">Services</a></span></li>
-                            <li><span><a href="#">Staff</a></span></li>
-                            <li><span><a href="#">Articles</a></span></li>
-                            <li><span><a href="#">Contact</a></span></li>
-                        </ul>
-                    </div>
-                    <div class="footer-copy">
-                        <p>As cross as a hoon my built like a op shop. We're going bored sh*tless heaps she'll be right budgie smugglers. Grab us a durry mate she'll be right dunny rat.</p>
-                        <p>She'll be right larrikin with skite. As stands out like kero it'll be truckie.</p>
-                    </div>
-                </div>
-                
             </div>
         </div>
     </body>
